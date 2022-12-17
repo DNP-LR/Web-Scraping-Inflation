@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 
 class InflationScraper:
 
-
     def __init__(self):
         '''Initialization Function'''
 

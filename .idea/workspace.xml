@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fda79921-f491-4353-b1e6-c6421236d25f" name="Changes" comment="python Dash first try">
-      <change afterPath="$PROJECT_DIR$/main/Inflation Data (csv)/avocado.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/assets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/dash_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/toolchains.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/Crypto Data (csv)/2022-11-20-11-31-15.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/Inflation Data (csv)/avocado.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/dash_layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/dash_layout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/crypto_scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/dash_layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/inflation_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/inflation_scraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,18 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/noubi/IdeaProjects/web_crypto_scraping/main/assets&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/noubi/IdeaProjects/web_crypto_scraping/main/assets",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\noubi\IdeaProjects\web_crypto_scraping\main\assets" />
@@ -82,10 +83,10 @@
       <recent name="C:\Users\noubi\IdeaProjects\web_crypto_scraping\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dash_app">
-    <configuration default="true" type="Application" factoryName="Application">
+  <component name="RunManager" selected="Python.__init__">
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="nim.task.build.to.cache" enabled="true" />
       </method>
     </configuration>
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -200,9 +201,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.dash_app" />
         <item itemvalue="Python.dash_layout" />
-        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.inflation_scraper" />
       </list>
     </recent_temporary>
@@ -222,6 +223,7 @@
       <workItem from="1669128464052" duration="6490000" />
       <workItem from="1669142465827" duration="20327000" />
       <workItem from="1669215010237" duration="3650000" />
+      <workItem from="1671193390983" duration="7528000" />
     </task>
     <task id="LOCAL-00001" summary="Webscraping complete">
       <created>1668940393254</created>
@@ -267,5 +269,6 @@
     <SUITE FILE_PATH="coverage/web_crypto_scraping$inflation_rates_Germany.coverage" NAME="inflation_scraper Coverage Results" MODIFIED="1668875539727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/web_crypto_scraping$dash_app.coverage" NAME="dash_app Coverage Results" MODIFIED="1669217471594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/web_crypto_scraping$dash_layout.coverage" NAME="dash_layout Coverage Results" MODIFIED="1669160603342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
+    <SUITE FILE_PATH="coverage/Web_Scraping_Inflation$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1671197622759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
   </component>
 </project>
